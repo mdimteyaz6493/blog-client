@@ -29,7 +29,8 @@ const Register = () => {
     setError('');
   
     try {
-      const response = await axios.post(`http://localhost:8000/user/register`, userData);
+      const response = await axios.post(`blog-server-silk.vercel.app/
+user/register`, userData);
       console.log('Response:', response); // Log response to inspect its structure
       const newUser = response.data; // Assuming response.data contains the new user data
       console.log('New User:', newUser); // Log new user data
