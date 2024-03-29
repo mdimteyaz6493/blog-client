@@ -17,7 +17,8 @@ const AuthorPosts = () => {
     const fetchPosts = async()=>{
       setisloading(true)
       try {
-        const response = await axios.get(`http://localhost:8000/posts/user/${id}`)
+        const response = await axios.get(`blog-server-silk.vercel.app
+posts/user/${id}`)
         setpost(response?.data)
       } catch (error) {
         console.log(error)
