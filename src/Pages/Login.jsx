@@ -28,7 +28,8 @@ const Login = () => {
     e.preventDefault();
     setError('')
     try {
-      const response = await axios.post(`http://localhost:8000/user/login`, userData);
+      const response = await axios.post(`blog-server-silk.vercel.app
+/user/login`, userData);
       console.log('Response:', response); // Log response to inspect its structure
       const User = response.data; // Assuming response.data contains the new user data
       console.log('User:', User); // Log new user data
